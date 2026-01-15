@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+</head>
+<body>
+<h1>Products</h1>
+<p>Welcome to this page (Products)</p>
+<a href="https://www.google.com/imghp" target="_blank">
+    <img src="images/image2.jpg" alt="Small image" width="150" height="150">
+</a>
+<!-- Links to all 5 pages. -->
+<nav>
+    <a href="index.html">Home</a> |
+    <a href="checkout.html">Products</a> |
+    <a href="product.html">Product</a> |
+    <a href="about.html">About</a> |
+    <a href="contact.html">Contact</a> |
+    <a href="checkout.html">Checkout</a>
+</nav>
+    <div>
+          <label for="name">Full Name:</label>  
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    </div>  
+    <div>
+          <label for="email">Email Adress: </label>  
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+    <div>
+          <label for="adress">Adress: </label>  
+          <input type="text" id="adress" name="adress" placeholder="Enter your adress" required>
+          <input type="text" id="city" name="city" placeholder="Enter your city" required>
+          <input type="text" id="county" name="county" placeholder="Enter your county" required>
+    </div>
+    <div>
+        <label for="paymentinfo">Your payment information</label>
+        <input type="text" maxlength="16" pattern="[0-9]{16}" inputmode="numeric" id="cardnumber" name="cardnumber" placeholder="Enter your card number">
+        <input type="month" pattern="[0-9]{2}/[0-99]{2}" name="explorationdate" id="explorationdate" placeholder="Enter exploration date MM/YY">
+        <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="3"  name="seccode" id="seccode" placeholder="Enter your security code">
+    </div>
+    <div>
+        <button>Betala</button>
+    </div>
+
+</body>
+</html>
+

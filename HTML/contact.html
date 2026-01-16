@@ -8,10 +8,40 @@
 <body>
 <h1>Contact</h1>
 <p>Welcome to this page (Contact)</p>
+<!-- description for the contact page. -->
 <a href="https://www.google.com/imghp" target="_blank">
     <img src="images/image5.jpg" alt="Small image" width="150" height="150">
 </a>
 <!-- Links to all 5 pages. -->
+<p>
+  Vi är studenter på NBI-handelsakademin och detta är vår kontaktsida för gruppuppgiften vi arbetar med. 
+    
+</p>
+
+<!-- Avatar bilder som länkar till utvecklarnas sidor. -->
+<a href="#message-form"><img src="avatar_contact/img4.jpg" alt="Utvecklare 1" width="100"></a>
+<a href="#message-form"><img src="avatar_contact/img3.jpg" alt="Utvecklare 2" width="100"></a>
+<a href="#message-form"><img src="avatar_contact/img2.jpg" alt="Utvecklare 3" width="100"></a>
+<a href="#message-form"><img src="avatar_contact/img1.jpg" alt="Utvecklare 4" width="100"></a>
+
+<!-- meddelande till utvecklarna -->
+<h3 id="message-form">Här kan du nå oss om du har några frågor eller feedback om vårt projekt. Vi ser fram emot att höra från dig!</h3>
+<form onsubmit="alert('Meddelandet skickats'); return false;">
+    <p>
+        <label>Ditt namn:</label><br>
+        <input type="text" placeholder="Skriv ditt namn" required>
+    </p>
+    <p>
+        <label>Till:</label><br>
+        <input type="email" value="developer_at@nbi.se" readonly>
+    </p>
+    <p>
+        <label>Meddelande:</label><br>
+        <textarea placeholder="Skriv ditt meddelande här..." required></textarea>
+    </p>
+    <button type="submit">Skicka</button>
+</form>
+
 <nav>
     <a href="index.html">Home</a> |
     <a href="checkout.html">Products</a> |

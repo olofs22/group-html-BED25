@@ -1,0 +1,127 @@
+/* Bakgrund: Orange/guld gradient */
+body {
+    background: radial-gradient(circle, #ffa358 30%, #863600e8 100%);
+    background-attachment: fixed;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Avatar-bilder */
+img {
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Själva boxen runt formuläret */
+form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 450px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+/* Rubrik i boxen */
+form h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 0;
+}
+
+/* Text i boxen */
+form p {
+    color: #202020;
+}
+
+/* Skiljelinje */
+form hr {
+    border: none;
+    border-top: 1px solid #000000;
+    margin: 20px 0;
+}
+
+/* Texten ovanför input-fälten */
+label {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Input-fälten - VIT BAKGRUND */
+input, textarea {
+    background-color: white;
+    border: 1px solid #ccc;
+    color: #333;
+    padding: 12px;
+    border-radius: 25px;
+    width: 100%;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+/* Placeholder-text - mörkgrå så den syns mot vit bakgrund */
+input::placeholder, 
+textarea::placeholder {
+    color: #9e9e9e;
+}
+
+/* Fokus-effekt när man klickar i fältet */
+input:focus, textarea:focus {
+    border-color: #ec814f;
+    outline: none;
+    box-shadow: 0 0 5px rgba(216, 15, 1, 0.5);
+}
+
+/* Textarea storlek */
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Skicka-knappen */
+button {
+    background-color: #ec814f;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #ee4f3a;
+}
+
+/* Navigeringsmeny */
+nav {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: rgba(224, 2, 2, 0);
+    border-radius: 25px;
+    display: inline-block;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    
+}
+
+nav a:hover {
+    text-decoration: underline;
+}

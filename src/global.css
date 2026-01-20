@@ -1,0 +1,53 @@
+﻿/*skapar image scaling på sidorna*/
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+body {/*detta för skroll i sidleds*/
+    overflow-x: hidden;
+}
+/*stack container, bild/text*/
+.stack {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+@media (max-width: 768px) {/*lägger detta i en global fil ist för i slutet av alla filer*/
+    .stack {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    nav a {
+        padding: 6px 10px;
+        background: rgba(255,255,255,0.2);
+        border-radius: 6px;
+        display: inline-block;
+    }
+    input, button, textarea, select {
+        width: 100%;
+        max-width: 100%;
+        margin: 8px 0;
+    }
+    h1 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    p, label {
+        font-size: 1rem;
+    }
+    label {
+        display: block;
+        word-break: break-word;
+        max-width: 100%;
+    }
+    label[for="payment"] {
+        font-size: 0.95rem;
+    }
+}

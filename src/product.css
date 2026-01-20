@@ -1,0 +1,137 @@
+/* --- src/product.css --- */
+
+/* Bakgrund & Grundinställningar */
+body {
+    background: radial-gradient(circle, #ffa358 30%, #863600e8 100%);
+    background-attachment: fixed;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Navigering */
+nav {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: rgba(224, 2, 2, 0);
+    display: inline-block;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: opacity 0.2s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+/* Kortet (.card) */
+.card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 500px; /* Lite bredare för att rymma detaljer */
+    margin: 0 auto 40px auto;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    text-align: left; /* Texten ser ofta bättre ut vänsterställd på produktsidor */
+    color: #202020;
+}
+
+/* Centrera vissa delar inuti kortet */
+.card h1, .card .price-tag, .card .product-image-container {
+    text-align: center;
+}
+
+.card h1 {
+    color: #333;
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+.card p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Produktbild */
+.product-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.product-image:hover {
+    transform: scale(1.02);
+}
+
+/* Priset */
+.price-tag {
+    display: block;
+    font-size: 2rem;
+    color: #ec814f; /* Er accentfärg */
+    font-weight: bold;
+    margin: 10px 0 20px 0;
+}
+
+/* Formulär-element (Väljare för storlek) */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Runda hörn precis som knapparna */
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+select:focus {
+    border-color: #ec814f;
+}
+
+/* Köp-knappen */
+.buy-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #ec814f;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.buy-button:hover {
+    background-color: #ee4f3a;
+}
+
+/* Footer */
+footer {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 20px;
+}

@@ -1,25 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
+    <title>Produkter | Webshop AB</title>
+    <link rel="stylesheet" href="../src/products.css">
 </head>
 <body>
-<h1>Products</h1>
-<p>Welcome to this page (Products)</p>
-<a href="https://www.google.com/imghp" target="_blank">
-    <img src="images/image2.jpg" alt="Small image" width="150" height="150">
-</a>
-<!-- Links to all 5 pages. -->
-<nav>
-    <a href="index.html">Start</a>
+
+    <nav>
+        <a href="index.html">Start</a>
         <a href="products.html">Produkter</a>
         <a href="product.html">Produkten</a>
         <a href="contact.html">Kontakt</a>
         <a href="about.html">Om oss</a>
         <a href="checkout.html">Checkout</a>
-</nav>
+    </nav>
+
+    <main class="card catalog-card">
+        <h1>Vårt Utbud</h1>
+        <p>Här hittar du våra senaste kollektioner.</p>
+
+        <div class="product-grid">
+
+            <div class="product-item">
+                <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=600&q=80" 
+                     alt="Orange Hoodie" 
+                     class="item-image">
+                <h3>CloudWear Hoodie</h3>
+                <span class="item-price">599 kr</span>
+                <a href="product.html" class="btn-small">Välj</a>
+            </div>
+            <div class="product-item coming-soon">
+                <div class="placeholder-img">?</div>
+                <h3>Kommande Nyhet</h3>
+                <span class="item-price">---</span>
+                <button class="btn-small disabled" disabled>Snart</button>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 Webshop AB
+    </footer>
+
 </body>
 </html>
-

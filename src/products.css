@@ -1,0 +1,129 @@
+/* --- src/products.css --- */
+
+/* Grunden (Samma som förut) */
+body {
+    background: radial-gradient(circle, #ffa358 30%, #863600e8 100%);
+    background-attachment: fixed;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: rgba(224, 2, 2, 0);
+    display: inline-block;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: opacity 0.2s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+/* --- KATALOG-SPECIFIKT --- */
+
+/* Vi gör detta kort lite bredare (max-width 800px) än index-kortet 
+   så att vi får plats med fler produkter i bredd senare */
+.card.catalog-card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 800px; 
+    margin: 0 auto 40px auto;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    color: #202020;
+}
+
+.card h1 { margin-top: 0; color: #333; }
+.card p { color: #666; margin-bottom: 30px; }
+
+/* Grid-systemet för produkter */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centrerar produkterna */
+}
+
+/* Det enskilda produktkortet inuti listan */
+.product-item {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px; /* Fast bredd på varje produktkort */
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.item-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Gör att bilden inte dras ut konstigt */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    font-size: 1.1rem;
+    margin: 10px 0 5px 0;
+    color: #333;
+}
+
+.item-price {
+    font-weight: bold;
+    color: #ec814f;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+/* Liten knapp ("Välj") */
+.btn-small {
+    background-color: #333; /* Svart knapp för kontrast mot den stora orangea */
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+    width: 80%;
+}
+
+.btn-small:hover {
+    background-color: #ec814f; /* Blir orange vid hover */
+}
+
+/* Styling för "Kommande" produkter (bara utfyllnad) */
+.coming-soon { opacity: 0.6; }
+.placeholder-img {
+    width: 100%; height: 200px; background: #ddd; 
+    border-radius: 8px; display: flex; align-items: center; 
+    justify-content: center; font-size: 2rem; color: #aaa;
+    margin-bottom: 10px;
+}
+.btn-small.disabled {
+    background-color: #ccc; cursor: not-allowed;
+}
+.btn-small.disabled:hover { background-color: #ccc; }

@@ -1,0 +1,117 @@
+/* --- index.css --- */
+
+/* Bakgrund: Orange/guld gradient (Samma som Contact/Checkout) */
+body {
+    background: radial-gradient(circle, #ffa358 30%, #863600e8 100%);
+    background-attachment: fixed;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 0; /* Tar bort webbläsarens default-marginaler */
+}
+
+/* Navigeringsmeny */
+nav {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: rgba(224, 2, 2, 0); /* Transparent bakgrund */
+    display: inline-block;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: opacity 0.2s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+/* Huvudkortet (.card) - Designat för att matcha <form> i andra filer */
+.card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 450px; /* Samma bredd som formulären */
+    margin: 0 auto 40px auto; /* Centrerar kortet */
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    color: #202020;
+}
+
+/* Rubriker inuti kortet */
+.card h1 {
+    color: #333;
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+.card h2 {
+    color: #ec814f; /* Accentfärg (samma som knappen) */
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.card p {
+    color: #202020;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Produktbilden */
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px 0;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.product-image:hover {
+    transform: scale(1.05); /* Samma zoom-effekt som era avatarer */
+}
+
+/* Priset */
+.price {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Köp-knappen (.cta-button) - Stylad som <button> men för <a> länkar */
+.cta-button {
+    display: inline-block; /* Gör att länken kan ha padding och bredd */
+    background-color: #ec814f;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 12px;
+    width: 100%; /* Fyller ut kortet precis som era knappar */
+    border-radius: 25px;
+    font-weight: bold;
+    box-sizing: border-box; /* Ser till att padding inte spräcker bredden */
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+.cta-button:hover {
+    background-color: #ee4f3a;
+    cursor: pointer;
+}
+
+/* Footer styling */
+footer {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 20px;
+}

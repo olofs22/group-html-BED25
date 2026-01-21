@@ -1,27 +1,22 @@
-const jokeElement = document.getElementById("joke");
+const popupOverlay = document.getElementById("popup-overlay");
+const jokeText = document.getElementById("joke-text");
 
-  // Funktion som hämtar ett nytt skämt
-  function loadJoke() {
-    // Visa laddningstext medan vi väntar
-    jokeElement.textContent = "Laddar skämt...";
+function loadJoke() {
+    jokeText.textContent = "Laddar skämt...";
+    popupOverlay.style.display = "flex";
 
-    // Anropa API:et för att få ett slumpmässigt skämt
     fetch("https://official-joke-api.appspot.com/random_joke")
-      .then(function (response) {
-        // Gör om svaret till JSON
-        return response.json();
-      })
-      .then(function (joke) {
-        // Visa skämtet på sidan
-        jokeElement.textContent =
-          joke.setup + " — " + joke.punchline;
-      })
-      .catch(function () {
-        // Om något går fel, visa ett felmeddelande
-        jokeElement.textContent =
-          "Kunde inte ladda skämt 😢";
-      });
-  }
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (joke) {
+            jokeText.textContent = joke.setup + " — " + joke.punchline;
+        })
+        .catch(function () {
+            jokeText.textContent = "Kunde inte ladda skämt 😢";
+        });
+}
 
-  // Ladda ett skämt automatiskt när sidan öppnas
-  loadJoke();
+function closePopup() {
+    popupOverlay.style.display = "none";
+}

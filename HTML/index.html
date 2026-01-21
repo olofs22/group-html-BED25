@@ -4,19 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/global.css">
+    <link rel="stylesheet" href="../src/index.css">
     <link rel="stylesheet" href="../src/api_style.css">
+
     <title>Home</title>
 </head>
 <body>
 
-    <nav>
-        <a href="index.html">Start</a>
-        <a href="products.html">Produkter</a>
-        <a href="product.html">Produkten</a>
-        <a href="contact.html">Kontakt</a>
-        <a href="about.html">Om oss</a>
-        <a href="checkout.html">Checkout</a>
-    </nav>
+    
 
     <main class="card">
         <h1>Den Ultimata Hoodien</h1>
@@ -33,6 +28,27 @@
 
         <a href="products.html" class="cta-button">Se våra produkter</a>
     </main>
+
+    <nav>
+        <a href="index.html">Start</a>
+        <a href="products.html">Produkter</a>
+        <a href="product.html">Produkten</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="about.html">Om oss</a>
+        <a href="checkout.html">Checkout</a>
+    </nav>
+
+    <button onclick="loadJoke()">😂 Joke!</button>
+
+    <!-- Popup - DENNA MÅSTE FINNAS -->
+    <div id="popup-overlay" onclick="closePopup()">
+        <div id="popup-box" onclick="event.stopPropagation()">
+            <p id="joke-text"></p>
+            <button id="close-popup" onclick="closePopup()">Stäng</button>
+        </div>
+    </div>
+
+<script src="../javascript/joke.js"></script>
 
     <footer>
         &copy; 2026 Webshop AB
